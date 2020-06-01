@@ -3,7 +3,6 @@ This is a Ansible Playbook to automate the process of granting / revoking SSH ac
 
 # Pre-requisites
 * You must have Ansible 2.3 installed.
-* Git PULL from here https://github.com/luigimolinaro/ssh-bastion-host
 
 # Server & Installation Path
 Ansible playbook is installed on Retelit Network under server retelit12.retelit.it (10.200.7.147) under /root/ssh-access-manager
