@@ -1,0 +1,4 @@
+- hosts: "ssh_gateway"
+  connection: local
+  roles:
+    - ssh-access

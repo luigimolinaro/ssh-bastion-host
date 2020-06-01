@@ -1,0 +1,48 @@
+[hcs_milano_physic]
+#Controller CASCADING
+10.30.164.94 	#02.05_U02_2288HV5_01_Controller_01
+10.30.164.27 	#01.04_U02_2288HV5_01_Controller_02
+10.30.164.33 	#02.04_U02_2288HV5_01_Controller_03
+#CloudService
+10.30.164.60	#02.05_U05_2288HV5_02_AdvancedMGMT_01 
+10.30.164.112	#01.04_U05_2288HV5_02_AdvancedMGMT_02
+10.30.164.38	#02.04_U05_2288HV5_02_AdvancedMGMT_03
+#Net-Service
+10.30.164.108	#02.05_U08_2288HV5_03_NetService_01
+10.30.164.61	#02.05_U08_2288HV5_03_NetService_02
+
+#Controller CASCADED
+10.30.169.132	#Cascaded_Opensatck01
+10.30.169.133   #Cascaded_Opensatck02
+10.30.169.69    #Cascaded_Opensatck03
+
+10.30.169.225	#KVM01
+10.30.169.161   #KVM02
+10.30.169.76    #KVM03
+10.30.169.170   #KVM04
+10.30.169.71    #KVM05
+10.30.169.59    #KVM06
+10.30.169.198   #KVM07
+10.30.169.108   #KVM08
+10.30.169.87    #KVM09
+10.30.169.98    #KVM10
+10.30.169.61    #KVM11
+
+[hcs_milano_physic:vars]
+ansible_python_interpreter=/usr/bin/python
+ansible_ssh_user=fsp
+ansible_ssh_pass=Cloud12#$
+ansible_become=True
+ansible_become_method=su
+ansible_become_user=root
+ansible_become_pass=Huawei@CLOUD8!
+
+# [production-webservers:vars]
+# user_name=ubuntu
+# ansible_ssh_private_key_file=/home/ansible/.ssh/webservers.pem
+# ansible_ssh_user=ubuntu
+
+# [production-appservers:vars]
+# user_name=ubuntu
+# ansible_ssh_private_key_file=/home/ansible/.ssh/appservers.pem
+# ansible_ssh_user=ubuntu
