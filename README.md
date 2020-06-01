@@ -25,7 +25,7 @@ Ansible playbook is installed on Retelit Network under server retelit12.retelit.
 ```bash
  ansible-playbook -i inventory -e "access=revoke ssh_user=luigi_molinaro user=fsp" hcs.yml
 ```
-# Add user to HCS and add user to the Bastion Host ===
+# Add user to HCS and add user to the Bastion Host
 ## GRANT AND ADD USER
  ```bash
  ansible-playbook -i inventory -e "access=grant ssh_user=luigi_molinaro user=fsp hcs.yml" --tag=add_user
