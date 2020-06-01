@@ -31,18 +31,10 @@
 [hcs_milano_physic:vars]
 ansible_python_interpreter=/usr/bin/python
 ansible_ssh_user=fsp
-ansible_ssh_pass=Cloud12#$
+ansible_ssh_pass=
 ansible_become=True
 ansible_become_method=su
 ansible_become_user=root
-ansible_become_pass=Huawei@CLOUD8!
+ansible_become_pass=
 
-# [production-webservers:vars]
-# user_name=ubuntu
-# ansible_ssh_private_key_file=/home/ansible/.ssh/webservers.pem
-# ansible_ssh_user=ubuntu
 
-# [production-appservers:vars]
-# user_name=ubuntu
-# ansible_ssh_private_key_file=/home/ansible/.ssh/appservers.pem
-# ansible_ssh_user=ubuntu
